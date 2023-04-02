@@ -1,102 +1,637 @@
 *{
-    box-sizing:border-box;
+    box-sizing: border-box;
     margin: 0;
     padding: 0;
 }
 
-.container{
+body {
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
     width: 100%;
-    margin:0 auto;
 }
 
-header{
+header {
     width: 100%;
-    background-color:#EEEFF1;
-    padding-top: 79px;
-}
-
-.navigation{
-    width: 82%;
-    display: flex;
-    justify-content: flex-end;
-    margin-bottom: 166px;
-    
-}
-
-.navigation a{
-    text-decoration: none;
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 26px;
-    letter-spacing: 0.1em;
-    color: #000000;
-
-}
-
-.mainPage{
-    color:#34547A;
-}
-
-.navigation li{
-    margin-right: 42px;    
-}
-
-.mainInfo{
-    width: 82%;
     display: flex;
     justify-content: space-around;
+    align-items: center;
+    background: #EEEFF1;
+    padding-top: 57px;
+}
+
+.imageContainer {
+    width: 20%;
+    display: flex;
+    justify-content: flex-end;
+}
+
+.WD {
+    width: 96px;
+    height: 60px;
+}
+
+.nav {
+    width: 80%;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    font-weight: 400;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+    color: #000000;
+    cursor: pointer;
+}
+
+.navigation li {
+    list-style-type: none;
+    margin-right: 42px;
+}
+
+.navigation li:last-child {
+    margin-right: 0px;
+}
+
+span {
+    color: #34547A;
+}
+
+.burger {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items:center;
+    display: none;
+}
+
+.burger:hover {
+    cursor:pointer;
+}
+
+.burgerItem {
+    width: 40px;
+    height: 4px;
+    background-color:#34547A;
+    margin-bottom: 10px;
+}
+
+.main {
+    width: 100%;
+    padding-top: 161px;
+    background: #EEEFF1;
+    display: flex;
+    justify-content: center;
+    padding-bottom: 146px;
+}
+
+.compPhoto {
+    width: 50%;
+    display: flex;
+    justify-content: end;
+    padding-right: 142px;
+}
+
+.compLogo {
+    width: 328px;
+    height: 225px;
+}
+
+.design {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+}
+
+.designLayOut {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 48px;
+    color: #000000;
+}
+
+.randomText {
+    width: 40%;
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 26px;
+    color: #727272;
+    margin-bottom: 60px;
+}
+
+.btn {
+    background: #34547A;
+    width: 225px;
+    height: 65px;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.1em;
+    color: #FFFFFF;
+    border:none;
+    cursor:pointer;
+}
+
+.aboutMe {
+    background: #E5E5E5;
+    padding: 119px 0 100px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.aboutMain {
+    margin-bottom: 50px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+}
+
+.aboutRandom {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+}
+
+.projects {
+    width: 100%;
+    padding-top: 105px;
+    padding-bottom: 100px;
+    background:#34547A;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.parentContainer {
+    margin-right: 30px;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+      
+      
+.fourtyPlus {
+    font-weight: 500;
+    font-size: 21px;
+    color: #FFFFFF;
+}
+    
+.fourtyPlusText {
+    font-size: 16px;
+    color: #FFFFFF;
+}
+
+.skills {
+    width: 100%;
+    background: #E5E5E5;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding: 102px 0 102px 100px;
+}
+
+.mySkills {
+    width: 45%;
+    padding: 102px 0;
+    display: flex;
+    flex-direction: column;
+    align-items: start;
+}
+
+.skillsMain {
+    margin-right: 192px;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+    margin-bottom: 50px;
+}
+
+.skill {
+    width: 80%;
+    margin-bottom: 30px;
+}
+
+.skill:last-child {
+    margin-bottom: 0;
+}
+
+.photoshop {
+    margin-bottom: 20px;
+    font-size: 16px;
+    color: #727272;
+}
+
+.progress {
+    width: 100%;
+    height: 4px;
+    background: #C4C4C4;
+    position: relative;
+}
+
+.completed {
+    width: 80%;
+    height: 4px;
+    background: #34547A;
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+.skillsPhoto {
+    width: 45%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+.skillsPhoto img {
+    width: 100%;
+}
+
+.work {
+    padding: 100px 0;
+    background: #EEEFF1;
+    flex-direction: column;
+    align-items:center;
+    display: flex;
+}
+
+.how {
+    padding-bottom: 50px;
+    display: flex;
+    justify-content: center;
+    font-weight: 500;
+    font-size: 32px;
+    color: #000000;
+}
+
+.workRandom {
+    display: flex;
+    justify-content: center;
+    line-height: 26px;
+    color: #727272;
+    text-align: center;
+    padding-bottom: 57px;
+}
+
+.videoWork {
+    width: 50%;
+    display: flex;
+    justify-content: center;
+}
+
+video {
+    width: 100%;
+}
+
+.grid__Container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-auto-rows: minmax(100px, auto);
+}
+
+.parent {
+    position: relative;
+}
+
+.parent:hover .grid-hiden {
+    display: flex;
+    cursor: pointer;
+}
+
+.one, .three, .six, .eight {
+    background-image: url("./images/sticker.png");
+    background-size: cover;
+}
+
+.two, .four, .five, .seven {
+    background-image: url("./images/comp.png");
+    background-size: cover;
+}
+
+.one {
+    grid-row: 1/5;
+    grid-column: 1;
+}
+
+.two {
+    grid-row: 1/5;
+    grid-column: 2;
+}
+
+.three {
+    grid-row: 1/5;
+    grid-column: 3;
+}
+
+.four {
+    grid-row: 1/5;
+    grid-column: 4;
+}
+
+.five {
+    grid-row: 5/9;
+    grid-column: 1;
+}
+
+.six {
+    grid-row: 5/9;
+    grid-column: 2;
+}
+
+.seven {
+    grid-row: 5/9;
+    grid-column: 3;
+}
+
+.eight {
+    grid-row: 5/9;
+    grid-column: 4;
+}
+
+.grid-hiden {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: linear-gradient(0deg, rgba(52, 84, 122, 0.8), rgba(52, 84, 122, 0.8));
+    display: flex;
+    justify-content: center;
+    align-items:center; 
+    display: none;
+}
+
+.microsoft {
+    width: 100%;
+    padding: 72px 0 100px 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.microsoftItem {
+    margin-right: 30px;
+}
+
+.microsoftItem:last-child {
+    margin-right: 0;
+}
+
+.want {
+    width: 100%;
+    padding: 100px 0;
+    background: #EEEFF1;
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+}
+
+.wantMain {
+    font-weight: 500;
+    font-size: 32px;
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+.wantRandom {
+    font-size: 16px;
+    line-height: 26px;
+    text-align: center;
+    color: #727272;
+    margin-bottom: 65px;
+}
+
+.myData {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+form {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.inputs {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+
+.name {
+    margin-right: 30px;
+}
+
+.name, .email {
+    width: 255px;
+    height: 50px;
+    border:none;
+    font-size: 14px;
+    color: #5F5D5D;
+    padding-left: 20px;
+}
+
+.addText {
+    width: 540px;
+    height: 175px;
+    font-size: 14px;
+    color: #5F5D5D;
+    border:none;
+    margin-bottom: 50px;
+    resize: none;
+    padding: 17px 0 0 20px;
+}
+
+footer {
+    padding: 50px 0;
+    background: #34547A;
+    display: flex;
+    justify-content: space-around;
+}
+
+.textOnly {
+    display: flex;
+    flex-direction: column;
+}
+
+.surname {
+    font-weight: 500;
+    font-size: 21px;
+    color: #FFFFFF;
+    margin-bottom: 20px;
+}
+
+.rights {
+    font-size: 13px;
+    line-height: 21px;
+    color: #FFFFFF;
+}
+
+.logoOnly {
+    display: flex;
+    align-items:center
+}
+
+.logoOnly img {
+    margin-right: 22px;
+}
+
+img:last-child {
+    margin-right: 22px;
+}
+
+@media(max-width:768px) {
+    .navigation {
+        display: none;
     }
 
-    .design{
-        font-family: 'Roboto';
-        font-weight: 500;
-        font-size: 48px;
-        line-height: 79px;
-        color: #000000;
-        padding-bottom: 60px;
+    img.WD {
+        margin: 0;
     }
 
-    .randomText{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #727272;
-        padding-bottom: 85px;
-    }
-
-    .btn{
-        width: 225px;
-        height: 65px;
-        color: #FFFFFF;
-        background: #34547A;
-        border:none;
-        margin-bottom: 146px;
-    }
-
-    .aboutMe{
-        margin-top: 119px;
+    .burger {
         display: flex;
+    }
+        
+    .main { 
+        padding: 20px 0; 
         flex-direction: column;
-        align-items:center
+        align-items: center;
     }
 
-    .aboutMeText{
-        font-weight: 500;
-        font-size: 32px;
-        line-height: 38px;
-        color: #000000;
-        padding-bottom: 50px;
-    }
-
-    .aboutMeRandomText{
-        font-weight: 400;
-        font-size: 16px;
-        line-height: 26px;
-        color: #727272;
-        padding-bottom: 100px;
-    }
-
-    .projects{
+    .compPhoto {
+        margin: 0 0 20px;
         width: 100%;
-        background-color: #34547A;
+        justify-content: center;
+        padding: 0;
     }
+
+    .design {
+        align-items: center;
+        width: 100%;
+    }
+
+    .designLayOut {
+        margin-bottom: 10px;
+    }
+
+    .randomText {
+        margin-bottom: 10px;
+        width: 100%;
+        text-align: center;
+    }
+
+    .btn {
+        width: 200px;
+        height: 40px;
+    }
+
+    .aboutMe {
+        padding:30px 0 20px;
+    }
+
+    .aboutMain {
+        margin-bottom: 10px;
+    }
+
+    .projects {
+        padding:20px 0 20px 0;
+        margin-bottom: 10px;
+    }
+
+    .parentContainer {
+        margin-bottom: 10px;
+    }
+
+    .fourtyPlus {
+        font-size: 12px;
+    }
+
+    .fourtyPlusText {
+        font-size: 12px;
+    }
+
+    .skills {
+        padding: 20px 0 20px 10px;
+    }
+
+    .mySkills {
+        padding:20px 0;
+    }
+
+    .skillsMain {
+        margin-bottom: 10px;
+        margin-right: 0px;
+    }
+
+    .work {
+        padding: 10px 0;
+    }
+
+    .how {
+        padding-bottom: 10px;
+    }
+
+    .workRandom {
+        padding-bottom: 10px;
+    }
+
+    .grid__Container {
+        grid-auto-rows: minmax(50px, auto);
+    }
+
+    .microsoft {
+        padding: 0px;
+    }
+
+    .want {
+        padding:20px 0;
+    }
+
+    .wantMain {
+        margin-bottom: 10px;
+    }
+
+    .wantRandom {
+        margin-bottom: 10px;
+    }
+
+    .inputs {
+        justify-content: center;
+    }
+
+    .name {
+        margin-right: 0px;
+    }
+
+    .name, .email {
+        width: 90%;
+        margin-bottom: 10px;
+    }
+
+    .addText {
+        width: 90%;
+    }
+}
+
+    @media(max-width:480px) {
+       
+    .designLayOut {
+        font-size: 28px;
+    }
+}
+
+
+

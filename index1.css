@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  width: 100%;
+}
+
+header {
+  width: 100%;
+  background: #f8f4f4;
+  padding-bottom: 110px;
+  display: flex;
+  justify-content: center;
+  
+  
+}
+
+.logo {
+  align-items:center;
+}
+
+.visma {
+  height: 30px;
+  width: 108px;
+ }
+ 
