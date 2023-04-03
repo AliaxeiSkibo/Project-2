@@ -174,7 +174,6 @@ span {
     align-items:center;
 }
       
-      
 .fourtyPlus {
     font-weight: 500;
     font-size: 21px;
@@ -626,8 +625,7 @@ img:last-child {
     }
 }
 
-    @media(max-width:480px) {
-       
+@media(max-width:480px) { 
     .designLayOut {
         font-size: 28px;
     }
